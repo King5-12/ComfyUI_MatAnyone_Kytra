@@ -21,6 +21,10 @@ pip install -r requirements.txt
 https://huggingface.co/Mothersuperior/ComfyUI_MatAnyone_Kytra and they will 
 be placed in the ComfyUI_MatAnyone_Kytra/model folder
 
+Outdoor Lighting dance example:
+
+https://github.com/user-attachments/assets/bb6daad3-dccc-4201-8334-ccb2e520eb2e
+
 Realism with low light:
 
 https://github.com/user-attachments/assets/2ca7dcb9-d1be-4c15-82ca-d337d719f479
@@ -32,6 +36,7 @@ https://github.com/user-attachments/assets/dddde8ec-4312-43a8-9b0f-77ef00c16100
 Blue car against a blue sky:
 
 https://github.com/user-attachments/assets/8ac00e53-8ff2-496c-8119-4d10f51292aa
+
 
 ### Parameters
 
