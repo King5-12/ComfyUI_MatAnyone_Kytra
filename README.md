@@ -22,12 +22,15 @@ https://huggingface.co/Mothersuperior/ComfyUI_MatAnyone_Kytra and they will
 be placed in the ComfyUI_MatAnyone_Kytra/model folder
 
 Realism with low light:
+
 https://github.com/user-attachments/assets/2ca7dcb9-d1be-4c15-82ca-d337d719f479
 
 Anime using an AI created animation:
+
 https://github.com/user-attachments/assets/dddde8ec-4312-43a8-9b0f-77ef00c16100
 
 Blue car against a blue sky:
+
 https://github.com/user-attachments/assets/8ac00e53-8ff2-496c-8119-4d10f51292aa
 
 ### Parameters
