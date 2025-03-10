@@ -2,6 +2,11 @@
 
 This is a ComfyUI node for [MatAnyone](https://github.com/pq-yang/MatAnyone), a state-of-the-art video matting model that can remove backgrounds from videos using just a single mask for the first frame for enhanced/guided video matting. 
 
+## How To Use:
+
+MatAnyone only requires that you provide the first single frame alpha mask (solid white for the subject against a solid black background for the stuff you don't want in the final output).
+My example workflow uses the Rembg+ Session nodes from Comfy Essentials to automatically create the first frame alpha mask for you. The dance video example and the anime example videos below both used that method. Alternatively, you can provide the first frame alpha mask yourself and bypass those nodes. It's really that simple. Check the workflow directory in this repo for the example workflow.
+
 ## Installation
 
 1. Clone this repository into your ComfyUI custom_nodes folder:
