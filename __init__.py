@@ -10,6 +10,7 @@ from tqdm import tqdm
 from .inference_core import InferenceCore
 from .get_default_model import get_matanyone_model
 from .utils import gen_dilate, gen_erosion
+import folder_paths
 
 #Image Conversion Functions
 def tensor2pil(image):
@@ -116,8 +117,7 @@ class MatAnyoneNode:
         """Load the MatAnyone model if not already loaded"""
         if self.model is None:
             # Use local model path
-            current_dir = os.path.dirname(os.path.abspath(__file__))
-            model_dir = os.path.join(current_dir, "model")
+            model_dir = os.path.join(folder_paths.models_dir, "matanyone")
             os.makedirs(model_dir, exist_ok=True)
             
             ckpt_path = os.path.join(model_dir, "matanyone.pth")
@@ -125,9 +125,9 @@ class MatAnyoneNode:
             # Check if model exists, if not download it
             if not os.path.exists(ckpt_path):
                 print("MatAnyone model not found, downloading...")
-                model_url = "https://huggingface.co/Mothersuperior/ComfyUI_MatAnyone_Kytra/resolve/main/matanyone.pth?download=true"
-                self.download_model(model_url, ckpt_path)
-                print("Model downloaded successfully!")
+                # model_url = "https://huggingface.co/Mothersuperior/ComfyUI_MatAnyone_Kytra/resolve/main/matanyone.pth?download=true"
+                # self.download_model(model_url, ckpt_path)
+                # print("Model downloaded successfully!")
             
             # Load model
             self.model = get_matanyone_model(ckpt_path)
